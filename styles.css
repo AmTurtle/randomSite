@@ -1,0 +1,33 @@
+:root {
+    --CartoonLime: #c4fd70;
+    --BahamaBlue: #76ead7;
+    --EasyBlack: #3b3e46;
+}
+
+
+
+ul {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--BahamaBlue);
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: var(--EasyBlack);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: var(--CartoonLime);
+}
