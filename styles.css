@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
 :root {
     --CartoonLime: #c4fd70;
     --BahamaBlue: #76ead7;
@@ -50,4 +52,57 @@ ul.topnav li.right {float: right;}
 @media screen and (max-width: 600px) {
   ul.topnav li.right, 
   ul.topnav li {float: none;}
+}
+
+.header {
+    padding-top: 5%;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: Quicksand;
+    font-weight: 700;
+    font-size: 5rem;
+    color: var(--EasyBlack);
+}
+
+.body {
+    padding-left: 15%;
+    padding-right: 15%;
+    font-family: Source Sans Pro;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--BahamaBlue);
+    color: var(--EasyBlack);
+    text-align: center;
+    font-family: Source Sans Pro;
+    font-weight: 500;
+ }
+
+ #copyright {
+    text-align: left;
+    padding-left: 5%;
+ }
+
+ .fa {
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa-twitter {
+    color: var(--EasyBlack);
+}
+
+.fa-youtube {
+    color: var(--EasyBlack);
+}
+
+.fa-twitch {
+    color: var(--EasyBlack);
 }

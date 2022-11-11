@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        
+    </script>
     <title>Home</title>
 </head>
 <body>
@@ -33,6 +34,34 @@
 <div class="header">
     AmTurtle
 </div>
-home page
+
+<div class="body">
+    I am an <span id="age"></span> year old streamer and content creator. I like to play a variety of games but the main games I play are Minecraft and Rainbow Six: Siege. 
+</div>
+
+<div class="footer">
+    <p id="copyright">Copyright &copy; 2022 AmTurtle Co.</p>
+    <a href="https://www.twitter.com/amturtlee" target="_blank" class="fa fa-twitter"></a>
+    <a href="http://www.youtube.com/@amturtle" target="_blank" class="fa fa-youtube"></a>
+    <a href="https://www.twitch.com/amturtlee" target="_blank" class="fa fa-twitch"></a>
+</div>
+
+<script> 
+  function Age() {
+  var bday = 6;
+  var bmo = 3;
+  var byr = 2004;
+  var byr;
+  var age;
+  var now = new Date();
+  tday=now.getDate();
+  tmo=(now.getMonth());
+  tyr=(now.getFullYear());
+{ if((tmo > bmo)||(tmo==bmo & tday>=bday)) {age=byr}
+  else {age=byr + 1}
+document.getElementById('age').innerHTML = "" + (tyr-age);
+}}
+Age();
+</script>
 </body>
 </html>
