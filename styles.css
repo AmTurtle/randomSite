@@ -4,10 +4,25 @@
     --CartoonLime: #c4fd70;
     --BahamaBlue: #76ead7;
     --EasyBlack: #3b3e46;
-}
-   /* font-family: 'Quicksand', sans-serif; */
 
-body {margin: 0;}
+    /* dark mode */
+    --Cyclamen: #e86a92;
+
+}
+
+body {
+    margin: 0;
+    color: var(--EasyBlack);
+}
+
+.dark-mode {
+    background-color: var(--EasyBlack);
+    color: #ffffff;
+}
+
+ul.topnav.dark-mode {
+    color: #ffffff;
+}
 
 #navbarTurtle {
     margin: none;
@@ -23,7 +38,6 @@ ul.topnav {
     padding: 0;
     overflow: hidden;
     background-color: var(--BahamaBlue);
-
 }
 
 .navbar-a {
@@ -47,7 +61,7 @@ ul.topnav li a:hover:not(.active) {background-color: var(--CartoonLime);}
 
 /* ul.topnav li a.active {background-color: var(--CartoonLime);} */
 
-ul.topnav li.right {float: right;}
+ul.topnav li.navRight {float: right;}
 
 @media screen and (max-width: 600px) {
   ul.topnav li.right, 
@@ -65,12 +79,11 @@ ul.topnav li.right {float: right;}
     font-family: Quicksand;
     font-weight: 700;
     font-size: 5rem;
-    color: var(--EasyBlack);
 }
 
 .body {
-    padding-left: 30%;
-    padding-right: 30%;
+    padding-left: 25%;
+    padding-right: 25%;
     font-family: Source Sans Pro;
     font-weight: 500;
     font-size: 1.5rem;
@@ -95,7 +108,6 @@ ul.topnav li.right {float: right;}
 
  .fa {
     width: 30px;
-    text-align: center;
     text-decoration: none;
 }
 
@@ -109,4 +121,18 @@ ul.topnav li.right {float: right;}
 
 .fa-twitch {
     color: var(--EasyBlack);
+}
+
+#unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.right {
+    text-align: right;
+    padding-right: 10%;
 }

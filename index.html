@@ -11,12 +11,12 @@
     <title>Home</title>
 </head>
 <body>
-    <ul class="topnav">
+    <ul class="topnav" id="unselectable">
         <li><a class="navbar-a" href="../">Home</a></li>
         <li><a class="navbar-a" href="../AboutMe">About</a></li>
         <li><a class="navbar-a" href="../Contact">Contact</a></li>
         <li><a class="navbar-a" href="../Builds">Builds</a></li>
-        <li class="right" ><a id="defaultCursor" href="https://shattereddisk.github.io/rickroll/rickroll.mp4" target="_blank">
+        <li class="navRight" ><a id="defaultCursor" onclick="darkToggle()">
             <svg id="navbarTurtle" version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 400" width="50" height="30">
                 <style>
                     .s0 { fill: #3b3e46 } 
@@ -38,14 +38,20 @@
 <div class="body">
     I am an <span id="age"></span> year old streamer and content creator. I like to play a variety of games but the main games I play are Minecraft and Rainbow Six: Siege. 
 </div>
-<!--
-<a href="https://www.twitter.com/amturtlee" target="_blank" class="fa fa-twitter"></a>
-<a href="http://www.youtube.com/@amturtle" target="_blank" class="fa fa-youtube"></a>
-<a href="https://www.twitch.com/amturtlee" target="_blank" class="fa fa-twitch"></a>  
--->
-<div class="footer">
-    <p id="copyright">Copyright &copy; 2022 AmTurtle Co.</p>
-    
+
+<div class="footer" id="unselectable">
+    <table style="width:100%">
+        <tr>
+            <td>
+                <p id="copyright">Copyright &copy; 2022 AmTurtle Co.</p>
+            </td>
+            <td class="right">
+                <a href="https://www.twitter.com/amturtlee" target="_blank" class="fa fa-twitter"></a>
+                <a href="https://www.youtube.com/@amturtle" target="_blank" class="fa fa-youtube"></a>
+                <a href="https://www.twitch.com/amturtlee" target="_blank" class="fa fa-twitch"></a>  
+            </td>
+        </tr>
+    </table>
 </div>
 
 <script> 
@@ -64,6 +70,12 @@
 document.getElementById('age').innerHTML = "" + (tyr-age);
 }}
 Age();
+
+// dark mode
+function darkToggle() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
 </script>
 </body>
 </html>
