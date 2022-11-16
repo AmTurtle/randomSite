@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script type = "text/javascript" src="../functions.js"></script>
+    <script type = "text/javascript" src="functions.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Home</title>
 </head>
 <body>
+    <div w3-include-html="footer.html"></div>
 
 <ul class="topnav" id="unselectable">
     <li><a class="navbar-a" href="../">Home</a></li>
@@ -47,21 +48,7 @@
     </div>
 </section>
 
-
-<div class="footer" id="unselectable">
-    <table style="width:100%">
-        <tr>
-            <td>
-                <p id="copyright">Copyright &copy; 2022 AmTurtle Co.</p>
-            </td>
-            <td class="right">
-                <a href="https://www.twitter.com/amturtlee" target="_blank" class="fa fa-twitter"></a>
-                <a href="https://www.youtube.com/@amturtle" target="_blank" class="fa fa-youtube-play"></a>
-                <a href="https://www.twitch.com/amturtlee" target="_blank" class="fa fa-twitch"></a>  
-            </td>
-        </tr>
-    </table>
-</div>
+<div style="padding-bottom:4rem;"></div>
 
 <script> 
   function Age() {
@@ -79,9 +66,7 @@
 document.getElementById('age').innerHTML = "" + (tyr-age);
 }}
 Age();
-
-
 </script>
-
+<script>includeHTML();</script>
 </body>
 </html>

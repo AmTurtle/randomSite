@@ -11,21 +11,46 @@
 <body>
 <!--START EXTERNAL-->
 <div w3-include-html="../navbar.html"></div>
-
+<div w3-include-html="../footer.html"></div>
 <!--END EXTERNAL-->
 
 <div class="header" id="unselectable">Socials</div>
 
-<section id="twitch"><div class="body">
-w
-</div></section>
-<section id="twitter"><div class="body">
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>w<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-</div></section>
-<section id="youtube"><div class="body">
-    w
-</div></section>
-<div w3-include-html="../footer.html"></div>
+<table class="stable" border="0">
+
+    <tr id="twitch"><td>
+        <div style="display: flex; justify-content: center;"><iframe src="https://player.twitch.tv/?channel=amturtlee&parent=www.example.com" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe></div>
+    </td></tr>
+
+<tr><td><hr class="line"></td></tr>
+
+    <tr id="twitter">
+        <td>
+            <div ><a class="twitter-timeline" href="https://twitter.com/AmTurtlee?ref_src=twsrc%5Etfw" width="500px" height="500px">Tweets by AmTurtlee</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+        </td>
+        <td>
+            <iframe src="https://discord.com/widget?id=819704451357999104&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+
+        </td>
+    </tr>
+
+<tr><td><hr class="line" size="10px"></td></tr>
+
+    <tr id="youtube"><td>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/5BkjcvCpbow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </td></tr>
+
+<tr><td><hr class="line" size="10px"></td></tr>
+
+    <tr id="discord"><td>
+        <iframe src="https://discord.com/widget?id=819704451357999104&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    </td></tr>
+
+</table>
+
+
+<div style="padding-bottom:4rem;"></div>
+
 <script>includeHTML();</script> 
 </body>
 </html>
