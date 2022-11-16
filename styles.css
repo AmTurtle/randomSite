@@ -11,16 +11,13 @@
 }
 
 body {
+    position: relative;
     margin: 0;
     color: var(--EasyBlack);
 }
 
 .dark-mode {
     background-color: var(--EasyBlack);
-    color: #ffffff;
-}
-
-ul.topnav.dark-mode {
     color: #ffffff;
 }
 
@@ -47,7 +44,7 @@ ul.topnav {
 ul.topnav li {
     display: flex;
     float: left;
-    height:fit-content
+    height: fit-content;
 }
 
 ul.topnav li a {
@@ -59,18 +56,67 @@ ul.topnav li a {
 
 ul.topnav li a:hover:not(.active) {background-color: var(--CartoonLime);}
 
-/* ul.topnav li a.active {background-color: var(--CartoonLime);} */
-
-ul.topnav li.navRight {float: right;}
+ul.topnav li.navRight {
+    float: right;
+    cursor: pointer;
+}
 
 @media screen and (max-width: 600px) {
   ul.topnav li.right, 
   ul.topnav li {float: none;}
 }
 
-#defaultCursor {
-    cursor: default;
+.dropdown {
+    float: left;
+    overflow: hidden;
+    
+  }
+
+.dropdown:hover:not(.active) {
+    background-color: var(--CartoonLime)
 }
+  
+.dropdown .dropbtn {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 14px 16px;
+    border: none;
+    outline: none;
+    color: var(--EasyBlack);
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--CartoonLime);
+    min-width: 112px;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: var(--EasyBlack);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: var(--BahamaBlue)
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 
 .header {
     padding-top: 5%;
@@ -89,8 +135,13 @@ ul.topnav li.navRight {float: right;}
     font-size: 1.5rem;
 }
 
+#homeBody {
+    text-align: center;
+}
+
 .footer {
-    position: fixed;
+    display: block;
+    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -99,6 +150,7 @@ ul.topnav li.navRight {float: right;}
     text-align: center;
     font-family: Source Sans Pro;
     font-weight: 400;
+    margin-top: 100px
  }
 
  #copyright {
@@ -107,15 +159,15 @@ ul.topnav li.navRight {float: right;}
  }
 
  .fa {
-    width: 30px;
     text-decoration: none;
+    padding: 5px;
 }
 
 .fa-twitter {
     color: var(--EasyBlack);
 }
 
-.fa-youtube {
+.fa-youtube-play {
     color: var(--EasyBlack);
 }
 
@@ -123,7 +175,7 @@ ul.topnav li.navRight {float: right;}
     color: var(--EasyBlack);
 }
 
-#unselectable {
+.unselectable {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;

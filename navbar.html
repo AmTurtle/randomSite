@@ -1,12 +1,20 @@
-<ul class="topnav" id="unselectable">
+<ul class="topnav unselectable" id="navbar">
     <li><a class="navbar-a" href="../">Home</a></li>
-    <li><a class="navbar-a" href="../AboutMe">About</a></li>
+        <div class="dropdown">
+            <a href="../Socials"><button class="dropbtn">Socials</button></a>
+            <div class="dropdown-content">
+              <a href="../Socials/#twitch" class="fa fa-twitch"></a>
+              <a href="../Socials/#twitter" class="fa fa-twitter"></a>
+              <a href="../Socials/#youtube" class="fa fa-youtube-play"></a>
+            </div>
+        </div>
+    </a></li>
     <li><a class="navbar-a" href="../Contact">Contact</a></li>
     <li><a class="navbar-a" href="../Builds">Builds</a></li>
-    <li class="navRight" ><a id="defaultCursor" onclick="darkToggle()">
+    <li class="navRight" ><a onclick="darkToggle()">
         <svg id="navbarTurtle" version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 400" width="50" height="30">
             <style>
-                .s0 { fill: #3b3e46 } 
+                    .s0 { fill: #3b3e46 } 
             </style>
             <g id="AmTurtleLogo">
                 <path id="Shell" class="s0" d="m309.8 48l235.2 110.6-90.4 179h-291.1l-89.5-179z"/>
@@ -17,11 +25,3 @@
         </svg>
     </a></li>
 </ul>
-
-<script>
-// dark mode
-function darkToggle() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
-}
-</script>

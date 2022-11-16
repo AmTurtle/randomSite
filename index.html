@@ -4,29 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script type = "text/javascript" src="../functions.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script>
-        
-    </script>
     <title>Home</title>
 </head>
 <body>
 
 <ul class="topnav" id="unselectable">
     <li><a class="navbar-a" href="../">Home</a></li>
-    <li><a class="navbar-a" href="../AboutMe">About</a></li>
+        <div class="dropdown">
+            <a href="../Socials"><button class="dropbtn">Socials</button></a>
+            <div class="dropdown-content">
+                <a href="../Socials/#twitch" class="fa fa-twitch"></a>
+                <a href="../Socials/#twitter" class="fa fa-twitter"></a>
+                <a href="../Socials/#youtube" class="fa fa-youtube-play"></a>
+            </div>
+        </div>
+    </a></li>
     <li><a class="navbar-a" href="../Contact">Contact</a></li>
     <li><a class="navbar-a" href="../Builds">Builds</a></li>
-    <li class="navRight" ><a id="defaultCursor" onclick="darkToggle()">
+    <li class="navRight" ><a onclick="darkToggle()">
         <svg id="navbarTurtle" version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 400" width="50" height="30">
             <style>
                     .s0 { fill: #3b3e46 } 
             </style>
             <g id="AmTurtleLogo">
-                    <path id="Shell" class="s0" d="m309.8 48l235.2 110.6-90.4 179h-291.1l-89.5-179z"/>
-                    <path id="Back Leg" class="s0" d="m359 314h78v83h-78z"/>
-                    <path id="Front Leg" class="s0" d="m177 314h78v83h-78z"/>
-                    <path id="Head" class="s0" d="m126 241c-65.8 0-119-53.2-119-119 0-65.8 53.2-119 119-119 65.8 0 119 53.2 119 119 0 65.8-53.2 119-119 119z"/>
+                <path id="Shell" class="s0" d="m309.8 48l235.2 110.6-90.4 179h-291.1l-89.5-179z"/>
+                <path id="Back Leg" class="s0" d="m359 314h78v83h-78z"/>
+                <path id="Front Leg" class="s0" d="m177 314h78v83h-78z"/>
+                <path id="Head" class="s0" d="m126 241c-65.8 0-119-53.2-119-119 0-65.8 53.2-119 119-119 65.8 0 119 53.2 119 119 0 65.8-53.2 119-119 119z"/>
             </g>
         </svg>
     </a></li>
@@ -34,9 +40,13 @@
 
 <div class="header" id="unselectable">AmTurtle</div>
 
-<div class="body">
-    I'm an <span id="age"></span> year old streamer and content creator. I like to play a variety of games but the main games I play are Minecraft and Rainbow Six: Siege. 
-</div>
+<section class="section1">
+    <div class="body" id="homeBody">
+        Hello! My name is Turtle, I'm an <span id="age"></span> year old streamer and content creator. 
+        I like to play a variety of games but the main games I play are Minecraft and Rainbow Six: Siege. 
+    </div>
+</section>
+
 
 <div class="footer" id="unselectable">
     <table style="width:100%">
@@ -46,7 +56,7 @@
             </td>
             <td class="right">
                 <a href="https://www.twitter.com/amturtlee" target="_blank" class="fa fa-twitter"></a>
-                <a href="https://www.youtube.com/@amturtle" target="_blank" class="fa fa-youtube"></a>
+                <a href="https://www.youtube.com/@amturtle" target="_blank" class="fa fa-youtube-play"></a>
                 <a href="https://www.twitch.com/amturtlee" target="_blank" class="fa fa-twitch"></a>  
             </td>
         </tr>
@@ -70,11 +80,7 @@ document.getElementById('age').innerHTML = "" + (tyr-age);
 }}
 Age();
 
-// dark mode
-function darkToggle() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
-}
+
 </script>
 
 </body>

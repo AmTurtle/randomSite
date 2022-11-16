@@ -25,3 +25,11 @@ function includeHTML() {
     }
   }
 }
+
+// dark mode
+function darkToggle() {
+  var element = document.body;
+  var navbar = document.getElementById("navbar").innerHTML;
+  element.classList.toggle("dark-mode");
+  navbar.classList.toggle("dark-mode");
+}
